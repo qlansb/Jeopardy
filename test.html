@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeopardy Board</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .board {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+        .category {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+            border-radius: 5px 5px 0 0;
+        }
+        .cell {
+            text-align: center;
+            padding: 20px;
+            background-color: #444;
+            border-radius: 0 0 5px 5px;
+            cursor: pointer;
+        }
+        .cell:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="board">
+            <div class="category">Category 1</div>
+            <div class="category">Category 2</div>
+            <div class="category">Category 3</div>
+            <div class="category">Category 4</div>
+            <div class="category">Category 5</div>
+            <div class="cell">100</div>
+            <div class="cell">100</div>
+            <div class="cell">100</div>
+            <div class="cell">100</div>
+            <div class="cell">100</div>
+            <div class="cell">200</div>
+            <div class="cell">200</div>
+            <div class="cell">200</div>
+            <div class="cell">200</div>
+            <div class="cell">200</div>
+            <div class="cell">300</div>
+            <div class="cell">300</div>
+            <div class="cell">300</div>
+            <div class="cell">300</div>
+            <div class="cell">300</div>
+            <div class="cell">400</div>
+            <div class="cell">400</div>
+            <div class="cell">400</div>
+            <div class="cell">400</div>
+            <div class="cell">400</div>
+            <div class="cell">500</div>
+            <div class="cell">500</div>
+            <div class="cell">500</div>
+            <div class="cell">500</div>
+            <div class="cell">500</div>
+        </div>
+    </div>
+</body>
+</html>
