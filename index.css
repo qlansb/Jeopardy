@@ -50,7 +50,7 @@ footer {
 }
 
 .footer {
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -71,6 +71,7 @@ h3 {
   display: flex;
   padding: 20px;
   background-color: blueviolet;
+  color: white;
   text-align: center;
   justify-content: center;
   margin-left: auto;
@@ -78,70 +79,54 @@ h3 {
   width: 10%;
 }
 
-h4 {
-  display: flex;
-  background-color: navy;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-around;
-}
-
-/* .first-round-category {
-  display: grid;
-  border: 1px solid black;
-  background-color: darkblue;
-  margin: 3px 0px;
-  color: white;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr;
-  margin: 15px;
-  text-align: center;
-  column-gap: 4%;
-} */
-
-div > div {
-  text-align: center;
-  padding: 5%;
-}
-
-.first-round-point {
-  /* display: grid;
-  border: 1px solid black;
-  background-color: blueviolet;
-  color: white;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  gap: 40px;
-  margin: 3px 0px; */
-}
-
-/* .first-round-point:hover {
-  background-color: darkblue;
-} */
-
 .userInput {
   display: flex;
   justify-content: center;
   margin: 30px;
+  height: 30px;
 }
 
 .button2 {
   display: inline-flex;
-  width: 5%;
+  width: 4%;
+  height: 45px;
   align-items: center;
   margin-right: auto;
   margin-left: auto;
 }
 
-h4 {
-  display: inline-flex;
+.button2:hover {
+  background-color: blue;
+  color: white;
+}
+
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
+  align-items: center;
+}
+
+h4 {
+  display: flex;
+  justify-content: space-between;
+  margin: 5%; 
+  background-color: navy;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+.headerContainer h5 {
+  margin: 0; 
+  background-color: navy;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .button3 {
@@ -151,7 +136,6 @@ h4 {
   justify-content: end;
   margin-left: auto;
   margin-right: 25%;
-  margin-top: 4%;
 }
 
 .button3:hover {
@@ -159,7 +143,7 @@ h4 {
   color: white;
 }
 
-p {
+.boldQuestion {
   display: flex;
   text-align: center;
   background-color: #007fff;
@@ -168,7 +152,8 @@ p {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  width: 250px;
+  width: 25%;
+  font-size: 2rem;
 }
 
 .button4 {
@@ -190,18 +175,26 @@ p {
   justify-content: center;
 }
 
+/* first */
+
 .category {
   display: flex;
   flex-direction: column;
   list-style: none;
 }
 
-.category > li{
+.category > li {
   border: 1px solid black;
   background-color: #007fff;
   width: 900%;
-  height: 140%;
+  height: 45px;
   text-align: center;
+  margin: 50%;
+}
+
+.category > li:hover {
+  background-color: darkblue;
+  color: white;
 }
 
 .first-round-point {
@@ -214,7 +207,8 @@ p {
 .aboutQuestions {
   display: flex;
   list-style: none;
-  justify-content: space-evenly;
+  column-gap: 5%;
+  margin: 4% 0 1% 15%;
 }
 
 .aboutQuestions > li {
@@ -222,8 +216,85 @@ p {
   background-color: blue;
   color: white;
   width: 10%;
+  height: 40px;
   text-align: center;
 }
+
+/* second page */
+
+.category1 {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-left: 2%;
+}
+
+.category1 > li {
+  border: 1px solid black;
+  background-color: #007fff;
+  width: 700%;
+  text-align: center;
+  margin: 34%;
+  height: 45px;
+}
+
+.category1 > li:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+.second-round-point {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-right: 10%;
+  text-align: center;
+}
+
+
+
+/* .category1 {
+  display: inline-flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12.5%;
+}
+
+.category1 > li {
+  border: 1px solid black;
+  background-color: #007fff;
+  width: 500%;
+  text-align: center;
+  margin: 50%;
+}
+
+.category1 > li:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+.second-round-point {
+  display: flex; 
+  margin-right: 10%;
+}
+
+.aboutQuestions2 {
+  display: flex;
+  list-style: none;
+  margin: 1% 9% 1% 9%;
+  justify-content: space-around;
+}
+
+.aboutQuestions2 > li {
+  border: 1px solid black;
+  background-color: blue;
+  color: white;
+  width: 10%;
+  text-align: center;
+  font-size: 2rem;
+} */
 
 @media only screen and (max-width: 600px) {
   * {
