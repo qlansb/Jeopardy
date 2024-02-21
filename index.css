@@ -41,18 +41,19 @@ h1 {
 
 footer {
   border: 1px solid black;
-  display: flex;
   position: fixed;
   background-color: blue;
   color: white;
   bottom: 0;
   width: 300px;
   height: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
 }
 
+.footer {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
 /* FIRST ROUND CSS */
 
 h2 {
@@ -89,17 +90,18 @@ h4 {
   justify-content: space-around;
 }
 
-.first-round-category {
+/* .first-round-category {
   display: grid;
   border: 1px solid black;
   background-color: darkblue;
+  margin: 3px 0px;
   color: white;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr;
   margin: 15px;
   text-align: center;
   column-gap: 4%;
-}
+} */
 
 div > div {
   text-align: center;
@@ -107,19 +109,19 @@ div > div {
 }
 
 .first-round-point {
-  display: grid;
+  /* display: grid;
   border: 1px solid black;
   background-color: blueviolet;
   color: white;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 40px;
-  
+  margin: 3px 0px; */
 }
 
-.first-round-point:hover {
-  background-color: aqua;
-}
+/* .first-round-point:hover {
+  background-color: darkblue;
+} */
 
 .userInput {
   display: flex;
@@ -138,6 +140,8 @@ div > div {
 h4 {
   display: inline-flex;
   justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .button3 {
@@ -184,6 +188,41 @@ p {
 .playButton {
   display: flex;
   justify-content: center;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.category > li{
+  border: 1px solid black;
+  background-color: #007fff;
+  width: 900%;
+  height: 140%;
+  text-align: center;
+}
+
+.first-round-point {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-right: 10%;
+}
+
+.aboutQuestions {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.aboutQuestions > li {
+  border: 1px solid black;
+  background-color: blue;
+  color: white;
+  width: 10%;
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
