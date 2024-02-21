@@ -1,103 +1,211 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
 }
 
 body {
-    background-color: lightblue;
+  background-color: lightblue;
 }
 
 h1 {
-    text-align: center;
-    font-size: 6rem;
+  text-align: center;
+  font-size: 6rem;
 }
 
 .head-img {
-    display: block;
-    margin-left: auto;
-    margin-top: auto;
-    width: 77%;
+  display: block;
+  margin-left: auto;
+  margin-top: auto;
+  width: 77%;
 }
 
 .button1 {
-    display: block;
-    border: 3px solid black;
-    color: white;
-    background-color: blue;
-    width: 120px;
-    height: 60px;
-    text-align: center;
-    width: 20%;
-    margin-left: 350px;
-    margin-right: 50px;
-    margin-top: 40px;
+  display: block;
+  border: 3px solid black;
+  color: white;
+  background-color: blue;
+  width: 120px;
+  height: 60px;
+  text-align: center;
+  width: 20%;
+  margin-left: 350px;
+  margin-right: 50px;
+  margin-top: 40px;
 }
 
 .button1:hover {
-    background-color: lightcoral;
+  background-color: lightcoral;
 }
 
 footer {
-    border: 1px solid black;
-    display: block;
-    position: fixed;
-    background-color: blue;
-    color: white;
-    bottom: 0;
-    margin:auto 0;
-    width: 300px;
-    height: 30px;
-    text-align: center;
+  border: 1px solid black;
+  display: flex;
+  position: fixed;
+  background-color: blue;
+  color: white;
+  bottom: 0;
+  width: 300px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 
 /* FIRST ROUND CSS */
 
 h2 {
-    display: flex;
-    margin: 20px;
-    background-color: aquamarine;
-    text-align: center;
-    justify-content: center;
-    font-size: 4rem;
+  display: flex;
+  margin: 20px;
+  background-color: aquamarine;
+  text-align: center;
+  align-items: center;
+  font-size: 4rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h3 {
-    display: flex;
-    margin: 20px;
-    padding: 20px;
-    background-color: blueviolet;
-    text-align: center;
-    justify-content: center;
+  display: flex;
+  padding: 20px;
+  background-color: blueviolet;
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
+h4 {
+  display: flex;
+  background-color: navy;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
 }
 
 .first-round-category {
-    display: grid;
-    border: 1px solid black;
-    background-color: darkblue;
-    color: white;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr;
-    margin: 20px;
-    text-align: center;
-    justify-content: space-between;
+  display: grid;
+  border: 1px solid black;
+  background-color: darkblue;
+  color: white;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  margin: 15px;
+  text-align: center;
+  column-gap: 4%;
 }
 
 div > div {
-    text-align: center;
-    padding: 10px;
+  text-align: center;
+  padding: 5%;
 }
 
 .first-round-point {
-    display: grid;
-    border: 1px solid black;
-    background-color: blueviolet;
-    color: white;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 40px;
+  display: grid;
+  border: 1px solid black;
+  background-color: blueviolet;
+  color: white;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 40px;
+  
 }
 
 .first-round-point:hover {
-    background-color: aqua;
+  background-color: aqua;
+}
+
+.userInput {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.button2 {
+  display: inline-flex;
+  width: 5%;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h4 {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.button3 {
+  display: flex;
+  width: 70px;
+  text-align: center;
+  justify-content: end;
+  margin-left: auto;
+  margin-right: 25%;
+  margin-top: 4%;
+}
+
+.button3:hover {
+  background-color: blue;
+  color: white;
+}
+
+p {
+  display: flex;
+  text-align: center;
+  background-color: #007fff;
+  color: white;
+  margin: 40px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
+.button4 {
+  display: block;
+  width: 6%;
+  height: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button4:hover {
+  background-color: blue;
+  color: white;
+}
+
+.playButton {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    text-align: center;
+    font-size: 60%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .first-round-category {
+    justify-self: center;
+  }
+  h2 {
+    font-size: 60%;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

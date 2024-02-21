@@ -1,80 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeopardy Board</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #333;
-            color: #fff;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-        }
-        .board {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 10px;
-        }
-        .category {
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            padding: 10px;
-            background-color: #222;
-            border-radius: 5px 5px 0 0;
-        }
-        .cell {
-            text-align: center;
-            padding: 20px;
-            background-color: #444;
-            border-radius: 0 0 5px 5px;
-            cursor: pointer;
-        }
-        .cell:hover {
-            background-color: #555;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeopardy Board</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .jeopardy-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+  }
+
+  .category {
+    background-color: #0074D9;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .question {
+    background-color: #7FDBFF;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .question:hover {
+    background-color: #39CCCC;
+  }
+
+  .player {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .player label {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .player input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    font-size: 16px;
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="board">
-            <div class="category">Category 1</div>
-            <div class="category">Category 2</div>
-            <div class="category">Category 3</div>
-            <div class="category">Category 4</div>
-            <div class="category">Category 5</div>
-            <div class="cell">100</div>
-            <div class="cell">100</div>
-            <div class="cell">100</div>
-            <div class="cell">100</div>
-            <div class="cell">100</div>
-            <div class="cell">200</div>
-            <div class="cell">200</div>
-            <div class="cell">200</div>
-            <div class="cell">200</div>
-            <div class="cell">200</div>
-            <div class="cell">300</div>
-            <div class="cell">300</div>
-            <div class="cell">300</div>
-            <div class="cell">300</div>
-            <div class="cell">300</div>
-            <div class="cell">400</div>
-            <div class="cell">400</div>
-            <div class="cell">400</div>
-            <div class="cell">400</div>
-            <div class="cell">400</div>
-            <div class="cell">500</div>
-            <div class="cell">500</div>
-            <div class="cell">500</div>
-            <div class="cell">500</div>
-            <div class="cell">500</div>
-        </div>
-    </div>
+<div class="container">
+  <div class="jeopardy-board">
+    <div class="category">Category 1</div>
+    <div class="category">Category 2</div>
+    <div class="category">Category 3</div>
+    <div class="category">Category 4</div>
+    <div class="category">Category 5</div>
+    
+    <!-- Sample questions -->
+    <div class="question">Question 1</div>
+    <div class="question">Question 2</div>
+    <div class="question">Question 3</div>
+    <div class="question">Question 4</div>
+    <div class="question">Question 5</div>
+    
+    <div class="question">Question 6</div>
+    <div class="question">Question 7</div>
+    <div class="question">Question 8</div>
+    <div class="question">Question 9</div>
+    <div class="question">Question 10</div>
+    
+    <div class="question">Question 11</div>
+    <div class="question">Question 12</div>
+    <div class="question">Question 13</div>
+    <div class="question">Question 14</div>
+    <div class="question">Question 15</div>
+    
+    <div class="question">Question 16</div>
+    <div class="question">Question 17</div>
+    <div class="question">Question 18</div>
+    <div class="question">Question 19</div>
+    <div class="question">Question 20</div>
+  </div>
+  
+  <!-- Players -->
+  <div class="player">
+    <label for="player1">Player 1:</label>
+    <input type="text" id="player1" placeholder="Enter name">
+  </div>
+  <div class="player">
+    <label for="player2">Player 2:</label>
+    <input type="text" id="player2" placeholder="Enter name">
+  </div>
+  <div class="player">
+    <label for="player3">Player 3:</label>
+    <input type="text" id="player3" placeholder="Enter name">
+  </div>
+</div>
 </body>
 </html>
