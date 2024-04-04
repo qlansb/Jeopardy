@@ -12,8 +12,7 @@
 
     <h1>First Round</h1>
     <h3>Player 1</h3>
-
-
+    
     <div class="round-category">
         <ul class="aboutQuestions">
             <li>Nature</li>
@@ -25,52 +24,52 @@
         </ul>
     </div>
     <div class="first-round-point">
-        <ul class="category">
-            <li>100</li>
-            <li>200</li>
-            <li>300</li>
-            <li>400</li>
-            <li>500</li>
+        <ul class="category" id="naturePoints">
+            <li id="Nature-100">100</li>
+            <li id="Nature-200">200</li>
+            <li id="Nature-300">300</li>
+            <li id="Nature-400">400</li>
+            <li id="Nature-500">500</li>
         </ul>
-        <ul class="category">
-            <li>100</li>
-            <li>200</li>
-            <li>300</li>
-            <li>400</li>
-            <li>500</li>
+        <ul class="category" id="animalsPoints">
+            <li id="Animals-100">100</li>
+            <li id="Animals-200">200</li>
+            <li id="Animals-300">300</li>
+            <li id="Animals-400">400</li>
+            <li id="Animals-500">500</li>
         </ul>
-        <ul class="category">
-            <li>100</li>
-            <li>200</li>
-            <li>300</li>
-            <li>400</li>
-            <li>500</li>
+        <ul class="category" id="computersPoints">
+            <li id="Computers-100">100</li>
+            <li id="Computers-200">200</li>
+            <li id="Computers-300">300</li>
+            <li id="Computers-400">400</li>
+            <li id="Computers-500">500</li>
         </ul>
-        <ul class="category">
-            <li>100</li>
-            <li>200</li>
-            <li>300</li>
-            <li>400</li>
-            <li>500</li>
+        <ul class="category" id="mythologyPoints">
+            <li id="Mythology-100">100</li>
+            <li id="Mythology-200">200</li>
+            <li id="Mythology-300">300</li>
+            <li id="Mythology-400">400</li>
+            <li id="Mythology-500">500</li>
         </ul>
-        <ul class="category">
-            <li>100</li>
-            <li>200</li>
-            <li>300</li>
-            <li>400</li>
-            <li>500</li>
+        <ul class="category" id="historyPoints">
+            <li id="History-100">100</li>
+            <li id="History-200">200</li>
+            <li id="History-300">300</li>
+            <li id="History-400">400</li>
+            <li id="History-500">500</li>
         </ul>
-        <ul class="category">
-            <li>100</li>
-            <li>200</li>
-            <li>300</li>
-            <li>400</li>
-            <li>500</li>
+        <ul class="category" id="generalPoints">
+            <li id="General-100">100</li>
+            <li id="General-200">200</li>
+            <li id="General-300">300</li>
+            <li id="General-400">400</li>
+            <li id="General-500">500</li>
         </ul>
     </div>
 
 
-    <div class="userInput">
+    <div class="userInput" id="userInput">
         <input type="text" id="input" name="input" value="" placeholder="User Input">
     </div>
 
@@ -78,10 +77,11 @@
     <button class="button2">PASS</button> -->
     <div class="playButton">
         <h4>Player 1 Score: 0</h4>
-        <button class="button2">GUESS</button>
-        <button class="button2">PASS</button>
+        <button class="button2" id="guess">GUESS</button>
+        <button class="button2" id="passButton">PASS</button>
         <h4>Player 2 Score: 0</h4>
     </div>
+    <div class="questionAsked" id="questionAsked">RIGHT HERE</div>
     <a href="secondRound.html">
         <button class="button3">Next Round</button>
     </a>
@@ -89,7 +89,7 @@
         <footer>To learn more please visit www.Jeopardy.com</footer>
     </div>
 
-    <script src="index.js"></script>
+    <script type="text/javascript" src="index.js" type="module"></script>
 </body>
 
 </html>

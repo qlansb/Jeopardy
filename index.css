@@ -254,6 +254,11 @@ h4 {
   text-align: center;
 }
 
+.questionAsked {
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 600px) {
   * {
     margin: 0%;
